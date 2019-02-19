@@ -10,7 +10,7 @@ services:
  - postgresql
 
 before_script:
-#  - psql -c "CREATE DATABASE testingdb;"
+ - psql -c "CREATE DATABASE testingdb;"
 
 script:
   - export SECRET="ghhgvhvjhgjhgjnbvfchgjhh"
