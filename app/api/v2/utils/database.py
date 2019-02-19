@@ -14,7 +14,8 @@ def init_db():
         if ENV == 'testing':
             db_url = os.getenv("TEST_DATABASE_URL")
         else:
-            db_url = os.getenv("MAIN_DATABASE_URL")
+            db_url = "postgres://imzqjryhkpdegq:a60f004d543330ea4c2f4bc1053cd84362409361323ecf7bf636e7135ecebd3b@ec2-23-21-165-188.compute-1.amazonaws.com:5432/dbdefc1ect0gdm"
+
 
         # if config == "development":
         #     db_url = app_config("development")
