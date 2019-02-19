@@ -10,10 +10,11 @@ services:
  - postgresql
 
 before_script:
- - psql -c "CREATE DATABASE testingdb;"
+#  - psql -c "CREATE DATABASE testingdb;"
 
 script:
-  - export MAIN_DATABASE_URL="postgresql://postgres:12345@localhost/postgres"
+  - export MAIN_DATABASE_URL="dbname='postgres' host='127.0.0.1' port='5432' user='postgres' password='12345'"
+  
   - export TEST_DATABASE_URL = "dbname='testingdb' host='127.0.0.1' port='5432' user='postgres' password='12345'"
   - pytest --cov=app
 after_success:
