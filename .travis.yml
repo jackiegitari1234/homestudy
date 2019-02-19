@@ -13,6 +13,8 @@ before_script:
  - psql -c "CREATE DATABASE testingdb;"
 
 script:
+  - export MAIN_DATABASE_URL="postgresql://postgres:12345@localhost/postgres"
+  - export TEST_DATABASE_URL = "dbname='testingdb' host='127.0.0.1' port='5433' user='postgres' password='12345'"
   - pytest --cov=app
 after_success:
   - coveralls
