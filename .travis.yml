@@ -1,0 +1,21 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install pytest
+  - pip install pytest-cov
+  - pip install coveralls
+  - pip install -r requirements.txt
+services:
+ - postgresql
+
+before_script:
+ - psql -c "CREATE DATABASE testingdb;"
+
+script:
+  - pytest --cov=app
+after_success:
+  - coveralls
+
+
+  
