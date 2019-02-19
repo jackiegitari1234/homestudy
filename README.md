@@ -1,5 +1,5 @@
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/fa520a535e5047282886/maintainability)](https://codeclimate.com/github/jackiegitari1234/Questioner_v2/maintainability) [![Build Status](https://travis-ci.org/jackiegitari1234/homestudy.svg?branch=master)](https://travis-ci.org/jackiegitari1234/homestudy) [![Coverage Status](https://coveralls.io/repos/github/jackiegitari1234/homestudy/badge.svg?branch=master)](https://coveralls.io/github/jackiegitari1234/homestudy?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/fbd16b6f5d7a0d82920a/maintainability)](https://codeclimate.com/github/jackiegitari1234/homestudy/maintainability) [![Build Status](https://travis-ci.org/jackiegitari1234/homestudy.svg?branch=master)](https://travis-ci.org/jackiegitari1234/homestudy) [![Coverage Status](https://coveralls.io/repos/github/jackiegitari1234/homestudy/badge.svg?branch=master)](https://coveralls.io/github/jackiegitari1234/homestudy?branch=master)
 
 # Questioner : challenge 3
 
