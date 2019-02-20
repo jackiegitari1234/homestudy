@@ -24,8 +24,8 @@ def create_app():
     app.register_blueprint(V2_meetups)
     app.register_blueprint(V2_questions)
 
-    os.environ['FLASK_ENV'] = 'development'
-    app.config.from_object(app_config['development'])
+    os.environ['FLASK_ENV'] = 'production'
+    app.config.from_object(app_config['production'])
     
     init_db()
     create_tables()
