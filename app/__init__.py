@@ -15,7 +15,7 @@ from app.api.v2.utils.errorhandlers import (page_not_found,
 from app.api.v2.utils.database import init_db, create_tables
 
 
-def create_app():
+def create_app(configName):
 
     
 
