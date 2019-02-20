@@ -9,8 +9,9 @@ from flask_jwt_extended import (
 # local imports
 from app import create_app
 
+configName = os.getenv('APP_SETTINGS') 
+app = create_app(configName)
 
-app = create_app()
 SECRET_KEY = os.getenv("SECRET")
 app.config['JWT_SECRET_KEY'] = SECRET_KEY  
 jwt = JWTManager(app)
@@ -21,4 +22,4 @@ def index():
     return "Welcome"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

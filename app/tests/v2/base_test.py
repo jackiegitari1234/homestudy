@@ -15,7 +15,7 @@ class BaseTest(unittest.TestCase):
 
     def setUp(self):
         os.environ['TESTING_ENV'] = 'testing'
-        self.app = create_app()
+        self.app = create_app('testing')
         self.client = self.app.test_client()
         # init_db(db_url)
         # create_tables()
