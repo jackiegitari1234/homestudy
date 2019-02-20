@@ -16,7 +16,7 @@ app.config['JWT_SECRET_KEY'] = SECRET_KEY
 jwt = JWTManager(app)
 
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def index():
     return "Welcome"
 
