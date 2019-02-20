@@ -17,12 +17,6 @@ def init_db():
             db_url = "postgres://imzqjryhkpdegq:a60f004d543330ea4c2f4bc1053cd84362409361323ecf7bf636e7135ecebd3b@ec2-23-21-165-188.compute-1.amazonaws.com:5432/dbdefc1ect0gdm"
 
 
-        # if config == "development":
-        #     db_url = app_config("development")
-        # else:
-            # db_url = os.getenv("TEST_DATABASE_URL")
-            # db_url = "dbname='testingdb' host='127.0.0.1' port='5433' user='postgres' password='12345'"
-            # db_url = "postgresql://postgres:12345@localhost/testingdb"
         global conn, cur
         conn = psycopg2.connect(db_url)
         cur = conn.cursor()
@@ -35,7 +29,6 @@ def init_db():
 def create_tables():
 
     try:
-        # conn = init_db()
         cursor = conn.cursor()
         member = ''' 
             CREATE TABLE IF NOT EXISTS member (
