@@ -11,6 +11,7 @@ class Config(object):
     TESTING = False
     Database_Url = os.getenv("PRODUCTION_DATABASE_URL")
     SECRET_KEY = os.getenv("SECRET")
+    ENV = 'production'
 
 
 class DevelopmentConfig(Config):
