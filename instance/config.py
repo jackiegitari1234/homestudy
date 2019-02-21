@@ -9,7 +9,7 @@ class Config(object):
     '''Parent configuration class'''
     DEBUG = False
     TESTING = False
-    Database_Url = os.getenv("MAIN_DATABASE_URL")
+    Database_Url = os.getenv("PRODUCTION_DATABASE_URL")
     SECRET_KEY = os.getenv("SECRET")
 
 
