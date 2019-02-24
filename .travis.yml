@@ -14,6 +14,7 @@ before_script:
 
 script:
   - export SECRET="ghhgvhvjhgjhgjnbvfchgjhh"
+  - export TESTING_ENV=testing
   - export FLASK_ENV=production
   - export MAIN_DATABASE_URL="dbname='postgres' host='127.0.0.1' port='5432' user='postgres' password='12345'"
   - export TEST_DATABASE_URL="dbname='testingdb' host='127.0.0.1' port='5432' user='postgres' password='12345'"
