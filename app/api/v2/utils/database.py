@@ -105,7 +105,6 @@ def create_tables():
 
 def drop_all_tables():
     connec = init_db()
-    print("config")
     cursor = connec.cursor()
     cursor.execute("DROP TABLE IF EXISTS member CASCADE")
     
