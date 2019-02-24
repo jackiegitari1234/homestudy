@@ -19,6 +19,7 @@ inputs_validate = inputs_validate()
 
 
 SECRET_KEY = os.getenv("SECRET")
+os.environ['TESTING_ENV'] = 'production'
 
 
 # sign up endpoint
